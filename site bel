@@ -1,0 +1,70 @@
+Para criar um site em HTML para vender uma máquina de costura, você pode começar com uma página simples contendo:
+
+- Título e descrição do produto
+- Imagens da máquina de costura
+- Tabela de preço e características
+- Um formulário para contato ou botão de WhatsApp
+
+Segue um exemplo básico de código HTML que você pode usar:
+
+```html name=index.html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Venda de Máquina de Costura</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; background: #f9f9f9; }
+        .container { max-width: 700px; margin: 30px auto; background: #fff; padding: 24px; border-radius: 8px; box-shadow: 0 0 6px #ccc; }
+        img { max-width: 100%; display: block; margin: 16px 0; }
+        h1 { color: #2E4053; }
+        .features { margin: 20px 0; }
+        .price { font-size: 2em; color: #27ae60; margin: 20px 0; }
+        .contact { margin-top: 30px; }
+        .whatsapp { background: #25d366; color: #fff; padding: 12px 24px; border: none; border-radius: 4px; font-size: 1.1em; cursor: pointer; text-decoration: none; }
+        .whatsapp:hover { background: #1ebe57; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Máquina de Costura Profissional</h1>
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="Máquina de Costura">
+        <p>Apresentamos a melhor máquina de costura para seu ateliê ou uso doméstico. Robusta, eficiente e fácil de usar!</p>
+        
+        <div class="features">
+            <h2>Características:</h2>
+            <ul>
+                <li>Costura reta e zig-zag</li>
+                <li>Velocidade ajustável</li>
+                <li>Motor silencioso</li>
+                <li>Garantia de 1 ano</li>
+                <li>Suporte técnico incluso</li>
+            </ul>
+        </div>
+        
+        <div class="price">
+            <strong>R$ 1.200,00</strong>
+        </div>
+        
+        <div class="contact">
+            <h2>Entre em Contato</h2>
+            <form action="mailto:seuemail@exemplo.com" method="post" enctype="text/plain">
+                <label>Nome:<br><input type="text" name="nome" required></label><br><br>
+                <label>Email:<br><input type="email" name="email" required></label><br><br>
+                <label>Mensagem:<br><textarea name="mensagem" rows="4" required></textarea></label><br><br>
+                <button type="submit">Enviar</button>
+            </form>
+            <br>
+            <a class="whatsapp" href="https://wa.me/SEUNUMERO?text=Tenho%20interesse%20na%20máquina%20de%20costura!" target="_blank">
+                Fale pelo WhatsApp
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+```
+
+Personalize com sua imagem, descrição, preço e email/WhatsApp.
+
+Se quiser também um CSS separado ou mais páginas, me avise!
